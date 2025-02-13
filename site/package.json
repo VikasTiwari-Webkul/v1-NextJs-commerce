@@ -14,6 +14,7 @@
   "sideEffects": false,
   "dependencies": {
     "@react-spring/web": "^9.4.1",
+    "@vercel/commerce-bagisto": "^0.0.1",
     "autoprefixer": "^10.4.2",
     "body-scroll-lock": "^4.0.0-beta.0",
     "clsx": "^1.1.1",
