@@ -1,9 +1,12 @@
 {
-  "$schema": "https://turborepo.org/schema.json",
   "pipeline": {
     "build": {
-      "dependsOn": ["^build"],
-      "outputs": ["dist/**"]
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        "dist/**"
+      ]
     },
     "next-commerce#build": {
       "dependsOn": [
@@ -13,10 +16,14 @@
         "$NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN",
         "$NEXT_PUBLIC_SWELL_STORE_ID"
       ],
-      "outputs": [".next/**"]
+      "outputs": [
+        ".next/**"
+      ]
     },
     "test": {
-      "dependsOn": ["^build"],
+      "dependsOn": [
+        "^build"
+      ],
       "outputs": []
     },
     "lint": {
